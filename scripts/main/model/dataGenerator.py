@@ -66,9 +66,10 @@ def read_image_and_gt(img_files, gt_files, config):
 
             #get class, if class is not in listed, skip it
             try:
-                cls = config.CLASS_TO_IDX[obj[0].lower().strip()]
+                # With euclidaug, classId is directly in the line
+                # cls = config.CLASS_TO_IDX[obj[0].lower().strip()]
                 # print cls
-
+                cls = int(obj[0])
 
                 #get coordinates
                 xmin = float(obj[4])
@@ -338,8 +339,10 @@ def read_image_and_gt_with_original(img_files, gt_files, config):
 
             #get class
             try:
-                cls = config.CLASS_TO_IDX[obj[0].lower().strip()]
+                # Euclidaug gives direct class Id, not class name
+                # cls = config.CLASS_TO_IDX[obj[0].lower().strip()]              
                 # print cls
+                cls = int(obj[0])
 
 
                 #get coordinates
