@@ -1,4 +1,6 @@
-# SqueezeDet on Keras #
+# SqueezeDet on Keras (with euclidaug and Python 3.7, tf 1.13) #
+
+(Updated for Python 3.7.1, and euclidaug based image data sets)
 
 ## _SqueezeDet:_ Unified, Small, Low Power Fully Convolutional Neural Networks for Real-Time Object Detection for Autonomous Driving
 By Bichen Wu, Alvin Wan, Forrest Iandola, Peter H. Jin, Kurt Keutzer (UC Berkeley & DeepScale)
